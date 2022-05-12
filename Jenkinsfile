@@ -22,8 +22,8 @@ pipeline {
                 branch "PR-*"
             }
             steps {
-                sh "[[ 'Encantado de saludarte, Pedro' = $(echo 'Pedro'|./ejercicio.sh pruebas) ]]"
-                sh "[[ 'Encontraste el truco!: el primer parámetro del script es: sabeurp' = $(echo 'secreto'|./ejercicio.sh pruebas) ]]"
+                sh "[[ 'Encantado de saludarte, Pedro' = \$(echo 'Pedro'|./ejercicio.sh pruebas) ]]"
+                sh "[[ 'Encontraste el truco!: el primer parámetro del script es: sabeurp' = \$(echo 'secreto'|./ejercicio.sh pruebas) ]]"
             }
         }
     }
