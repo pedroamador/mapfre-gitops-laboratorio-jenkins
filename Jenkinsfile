@@ -22,7 +22,7 @@ pipeline {
                 branch "PR-*"
             }
             steps {
-                echo "La prueba acabó bien"
+                sh "./test.sh"
             }
         }
     }
